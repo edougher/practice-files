@@ -60,7 +60,8 @@ prototype chain image: https://miro.medium.com/max/2400/1*Lu-BaawSayDz1itKPk2u4w
 ---- REACT -----
 
 ONE WAY DATA FLOW
-One way data flow means that the model is the single source of truth. Changes in the UI trigger messages that signal user intent to the model (or “store” in React). Only the model has the access to change the app’s state. The effect is that data always flows in a single direction, which makes it easier to understand.
+One way data flow means that the model is the single source of truth. Changes in the UI trigger messages that signal user intent to the model (or “store” in React). 
+Only the model has the access to change the app’s state. The effect is that data always flows in a single direction, which makes it easier to understand.
 One way data flows are deterministic, whereas two-way binding can cause side-effects which are harder to follow and understand.
 
 STATE
@@ -197,7 +198,7 @@ function mostRepeated(arr){
 }
 
 
-// antonia solution
+// antonio solution
 function palindromeTwo(str) {
 	for(let i = 0; i < str.length/2; i++){
 		if (str[i] !== str[str.length - 1 - i]) {
