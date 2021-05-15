@@ -1,4 +1,4 @@
-skilled
+//skilled
 
 /*
 1- reverse a string (without using the reverse method)
@@ -172,7 +172,7 @@ str[2] swap str[4]
 */
 function mostRepeated(arr){
 	let nums = {num}
-	for(let x = 0; x < arr.lengt; x++) {
+	for(let x = 0; x < arr.length; x++) {
 		let elem = arr[x]
 		if (nums[elem]) {
 			// elem already in nums
@@ -207,7 +207,7 @@ function palindromeTwo(str) {
 	}
 	return true
 }
-
+'dooood'
 
 function isPalindrome(str){
 	let newStr = ''
