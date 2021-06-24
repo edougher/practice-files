@@ -171,7 +171,7 @@ str[2] swap str[4]
 
 */
 function mostRepeated(arr){
-	let nums = {num}
+	let nums = {}
 	for(let x = 0; x < arr.length; x++) {
 		let elem = arr[x]
 		if (nums[elem]) {
