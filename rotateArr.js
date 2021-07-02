@@ -25,9 +25,10 @@ function rotateRight(nums, k) {
         nums.unshift(last)
         nums.pop()
     }
-    console.log(nums);
-    
+  return nums   
 }
+
+
 
 console.log(rotateRight(x, y));
 
