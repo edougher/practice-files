@@ -27,7 +27,10 @@ function rotateRight(nums, k) {
     }
   return nums   
 }
-
+/*
+small change to test
+  
+*/
 
 
 console.log(rotateRight(x, y));
