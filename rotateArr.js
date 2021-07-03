@@ -20,24 +20,42 @@ let x = [1, 2, 3, 4, 5, 6, 7]
 let y = 3
 
 function rotateRight(nums, k) {
-    for (let i = k; i > 0; i--) {
-        let last = nums[nums.length - 1]
-        nums.unshift(last)
-        nums.pop()
-    }
-  return nums   
-}
-/*
-small change to test
-another small change
+  // if (nums.length > 50000) return null
+  //   for (let i = k; i > 0; i--) {
+  //       nums.unshift(nums[nums.length - 1])
+  //       nums.pop()
+  //   }
 
+
+ // let first = nums.splice(nums.length - k, nums.length - 1)
+  let first = nums.splice(0, nums.length - k)
+  let second = nums
+  nums.concat(first)
+  
+
+  console.log(nums); 
+}
+rotateRight(x, y);
+/*
+implement using reverse
+1. Reverse whole array.
+2. reverse the first k elements
+3. reverse the rest.
 */
 
+// !!!!!!!! Cant figure out
+// function rotateWithReverse(nums, k) {
+//   let first = nums.reverse().splice(0, k).reverse()
+//   nums.reverse()
+//   return nums
+  
+// }
+//  console.log(rotateWithReverse(x, y))
 
-console.log(rotateRight(x, y));
 
 
 /*
-contains duplicate function.
-does an array contain a duplicate: boolean  
+Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+You must implement a solution with a linear runtime complexity and use only constant extra space. 
 */
