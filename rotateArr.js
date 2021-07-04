@@ -29,11 +29,11 @@ function rotateRight(nums, k) {
 
  // let first = nums.splice(nums.length - k, nums.length - 1)
   let first = nums.splice(0, nums.length - k)
-  let second = nums
-  nums.concat(first)
-  
+  //let second = nums.splice(nums)
+  //nums.concat(first)
 
-  console.log(nums); 
+
+  console.log(first, nums); 
 }
 rotateRight(x, y);
 /*

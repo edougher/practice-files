@@ -22,7 +22,7 @@ string path: a string describing the path
 
 int: the number of valleys traversed
 */
-
+/*
 const step = "DDUUUUDD"
 const steps = step.length
 
@@ -40,3 +40,20 @@ const climbs = (stepCount, stepDirection) => {
 }
 
 climbs(steps, step)
+  
+*/
+
+// recursive function
+
+function count(num) {
+    console.log(num);
+
+    //each time func is called decrease arg value by one
+    let nextNumber = num - 1;
+    // keep calling itself until arg reaches 1 (greater than 0)
+    if (nextNumber > 0) {
+        count(nextNumber);
+    }
+
+}
+console.log(count(5));

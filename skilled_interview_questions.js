@@ -207,12 +207,11 @@ function palindromeTwo(str) {
 	}
 	return true
 }
-'dooood'
 
 function isPalindrome(str){
 	let newStr = ''
-	for(x = str.length -1; x >= 0; x--){
-		newStr += str[x]
+	for(let i = str.length -1; i >= 0; i--){
+		newStr += str[i]
 	}
 	return (newStr === str)
 }
