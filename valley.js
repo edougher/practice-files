@@ -43,17 +43,18 @@ climbs(steps, step)
   
 */
 
-// recursive function
+// ---- example recursive function below ----
 
-function count(num) {
-    console.log(num);
+// function count(num) {
+//     console.log(num);
 
-    //each time func is called decrease arg value by one
-    let nextNumber = num - 1;
-    // keep calling itself until arg reaches 1 (greater than 0)
-    if (nextNumber > 0) {
-        count(nextNumber);
-    }
+//     //each time func is called decrease arg value by one
+//     let nextNumber = num - 1;
+//     // keep calling itself until arg reaches 1 (greater than 0)
+//     if (nextNumber > 0) {
+//         count(nextNumber);
+//     }
 
-}
-console.log(count(5));
+// }
+// console.log(count(5));
+
