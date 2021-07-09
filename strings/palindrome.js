@@ -1,4 +1,4 @@
-// Check for palindrome without Regex
+//* Check for palindrome without Regex
 
 function palindromeOne (str){
     let backWards = str.split('').reverse().join('')
@@ -6,10 +6,10 @@ function palindromeOne (str){
     
 }
 
-console.log(palindromeOne('dood'));
+//console.log(palindromeOne('dood'));
 
 
-// Check for palindrome with Regex
+//* Check for palindrome with Regex
 
 function palindromeTwo(str) {
     // Step 1. Lowercase the string and use the RegExp to remove unwanted characters from it
@@ -32,9 +32,9 @@ function palindromeTwo(str) {
     return reverseStr === lowRegStr; // "amanaplanacanalpanama" === "amanaplanacanalpanama"? => true
   }
    
-  console.log(palindromeTwo("A man, a plan, a canal. Panama")); 
+  //console.log(palindromeTwo("A man, a plan, a canal. Panama")); 
 
-  // Check for palindrome with Regex and for-loop
+  //* Check for palindrome with Regex and for-loop
 function palindromeThree(str) {
   // Step 1. Lowercase the string and use the RegExp to remove unwanted characters from it
   var re = /[\W_]/g; // or var re = /[^A-Za-z0-9]/g;
@@ -62,7 +62,7 @@ function palindromeThree(str) {
 //   var reverseStr = lowRegStr.split('').reverse().join(''); 
 //   return reverseStr === lowRegStr;
  
-palindrome("A man, a plan, a canal. Panama");
+//palindrome("A man, a plan, a canal. Panama");
 
 // 2. Check for Palindromes With a FOR loop
 // Half-indexing (len/2) has benefits when processing large strings. 
@@ -103,4 +103,23 @@ function palindrome(str) {
  return true; // Both parts are strictly equal, it returns true => The string is a palindrome
 }
 
-palindrome("A man, a plan, a canal. Panama");
+//palindrome("A man, a plan, a canal. Panama");
+
+/*
+---- * Leet code palindrome solution   
+*/
+let s = "A man, a plan, a canal: Panama"
+var isPalindrome = function(s) {
+  var re = /[^A-Za-z0-9]/g; 
+  s = s.toLowerCase().replace(re, '');
+  
+  for (let i = 0; i < s.length/2; i++){
+      if (s[i] !== s[s.length - 1 - i]) {
+          return false
+      }
+  }
+  console.log('121');
+  return true
+};
+
+console.log(isPalindrome(s));

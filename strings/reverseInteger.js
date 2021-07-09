@@ -26,8 +26,8 @@ const num = 4320;
 
 
 reverseInteger = (num) => {
-    if (x === 0 || x >= 2147483647 || x < -2147483647) return 0
-    
+    if (num === 0 || num >= 2147483647 || num < -2147483647) return 0
+
     let numString = num.toString()
     let pivot = numString.length / 2;
     let j = num.toString().length - 1;
@@ -52,4 +52,4 @@ reverseInteger = (num) => {
 
 };
 
-reverseInteger(num);
+console.log(reverseInteger(num)); 

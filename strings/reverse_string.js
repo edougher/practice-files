@@ -12,15 +12,15 @@
 
 
 
-//with methods
+//* with methods
 function reverseString(str) {
   const reversedStr = str.split("").reverse().join("");
   return reversedStr;
 }
-console.log(reverseString("Hello"));
+//console.log(reverseString("Hello"));
 
 
-// without methods, solution I came up with
+//* without methods, solution I came up with
 function reverseStringWithoutMethods(str) {
   let reversedStr = "";
   for (let i = str.length - 1; i >= 0; i--) {
@@ -28,4 +28,23 @@ function reverseStringWithoutMethods(str) {
   }
   return reversedStr;
 }
-console.log(reverseStringWithoutMethods("Hello"));
+//console.log(reverseStringWithoutMethods("Hello"));
+
+
+// Leetcode solution with double pointers
+const s = ["h","e","l","l","o","k"]
+revString = (s) => {
+  let i = 0
+  let j = s.length - 1
+
+  while (i <= j) {
+    let temp = s[i]
+    s[i] = s[j]
+    s[j] = temp
+    i++
+    j--
+  }
+ return s
+}
+
+console.log(revString(s));
