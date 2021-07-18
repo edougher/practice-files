@@ -43,4 +43,18 @@ function minSwaps(arr) {
  return count_1
 }
 let y = [0, 0, 0, 1, 0, 1, 0];
-console.log(minSwaps(y));
+//console.log(minSwaps(y));
+
+function getCharMap(y) {
+  // We define an empty object that will hold the key - value pairs.
+  let charMap = {}
+
+  /*We loop through each character in the string. if the character 
+  already exists in the map, increase the value, otherwise add it 
+  to the map with a value of 1 */
+  for (let char of y) {
+      charMap[char] = charMap[char] + 1 || 1
+  }
+  return charMap
+}
+console.log(getCharMap(y));
