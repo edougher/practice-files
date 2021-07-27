@@ -21,7 +21,7 @@ var firstUniqChar = function(s) {
             chars[s[i]]++
         }
     }
-
+    
     Object.keys(chars).forEach(key => {
         if (chars[key] === 1) {
             singleChars.push(key)
