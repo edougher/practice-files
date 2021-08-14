@@ -118,7 +118,7 @@ var isPalindrome = function(s) {
           return false
       }
   }
-  console.log('121');
+  
   return true
 };
 
