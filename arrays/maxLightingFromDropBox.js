@@ -10,18 +10,37 @@ return the least or lowest coodinate
 
 
 */
-const arr = [-5, -1, 3, 8, 12]
-const rad = 4
+const arr = [-12, -3, -1, 12];
+const rad = 1;
 const findMaxLighting = (arr, rad) => {
-    let hMap = {}
+  let hMap = {};
 
-    for (let i = 0; i < arr.length; i++){
-        hMap[arr[i]] = true
+    for (let i = 0; i < arr.length; i++) {
+    hMap[arr[i]] = true;
+  }
+  let min = arr[0];
+  let max = arr[arr.length - 1];
 
+  let num = 0;
+  let tempCount = 0;
+  let tempCoord;
+
+  for (let i = min; i <= max; i++) {
+      Object.keys(hMap).forEach((key) => {
+        //console.log(typeof key);
+      if (parseInt(key) <= i + rad && parseInt(key) >= i - rad) {
+        tempCount += 1;
+      }
+    });
+  
+    if (tempCount > num) {
+        num = tempCount;
+        tempCoord = i
     }
-    let min = arr[0]
-    let max = arr[arr.length - 1]
-    console.log(min, max);
-}
+    tempCount = 0
+      
+  }
+  return tempCoord
+};
 
-findMaxLighting(arr,rad)
+console.log(findMaxLighting(arr, rad)); 
