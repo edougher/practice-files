@@ -1,3 +1,5 @@
+//almostIncreasing from Codesignal
+
 const almostIncreasingSequence = sequence => {
     let count = 0;
         for(let i = 0; i < sequence.length; i++){
