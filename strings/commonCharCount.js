@@ -27,8 +27,8 @@ console.log(charCount1, charCount2)
 return count
 }
 
-/*
+let s1 = "aabcc"
+let s2 = "adcaa"  
 
-s1: "aabcc"
-s2: "adcaa"  
-*/
+
+commonCharacterCount(s1, s2)
